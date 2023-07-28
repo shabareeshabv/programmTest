@@ -1,0 +1,223 @@
+1)
+method overloading is  consist of  same method name and different parameters 
+ systex for  user defined method creation
+Access Specifier non-access specifier  returntype methodName()
+
+example for method overloading 
+class Main{
+
+ static void exam(String paper, float time)
+  {
+System.out.println(" paper is "+paper);
+System.out.println(" time is "+time);
+  }
+static void exam(int marks)
+{
+System.out.println("marks is "+marks);
+  }
+} 
+          
+class MainRunner{
+
+public static void main(String[] args)
+{
+Main.exam("java",1.5f);
+Main.exam( 50);
+}
+}
+
+
+
+
+
+
+
+2)
+variable is used for to store the data 
+there are 3 different types of variable is there 
+1.static variable
+2.instance variable
+3.loacal variable
+
+class Variable{
+
+public static void main(String[] args)
+       {
+static int value; // value is static variable
+static float value;
+int value; value is instance variable 
+float value;
+
+static void  acer(float price);// price is local variable
+   { int  var=10; // here is var is local variable
+   }
+        }
+                }
+
+
+3)
+stack is follows  last in first out order 
+stack does create memory location
+heap is create address of memory locaton 
+java is store and retrieve the data based on address of memory 
+
+
+
+
+4) class Java{
+
+Java(String value,float ref,int time)
+{
+System.out.println(" string value is "+value);
+System.out.println(" ref value is "+ref);
+System.out.println(" time value is "+time);
+}
+java(String ref,float  price)
+{
+System.out.println(" ref value is "+ref);
+System.out.println(" price value is "+price);
+ 
+}
+
+}
+ class JavaRunner{
+public static void main(String[] args)
+{
+
+Java java1=new Java("exam",50.0f,50);
+Java java1=new Java("exam",45.0f,);
+
+5) instance method overloading
+class Main{
+String paper;
+float time;
+int marks;
+static void exam(String paper, float time)
+  {this.paper=paper;
+this.time=time;
+System.out.println(" paper is "+paper);
+System.out.println(" time is "+time);
+  }
+static void exam(int marks)
+{this.marks=marks;
+System.out.println("marks is "+marks);
+  }
+} 
+          
+class MainRunner{
+
+public static void main(String[] args)
+{
+Main.exam("java",1.5f);
+Main.exam( 50);
+}
+}
+
+
+
+
+
+
+
+
+6)
+static variable  can use once the variable in class
+
+
+class Xworkz{
+
+static float time;
+statin int marks;
+static void name( float time,int marks)
+{
+this.time=time;
+this.marks=marks;
+}
+
+}
+
+class Exam{
+public static void main(String[] args)
+
+{
+Xworkz.name(50.0f,50);
+}
+}
+
+ 
+
+7) constructor chaining is used for calling one constructor it  call another construction with help of this() methos 
+
+
+class Chain{
+
+public static void main(String[] args){
+
+
+Chain ( String value )
+{
+this.value=value;
+System.out.pritln("staring value is " +value);
+}
+Chain ( String value,int time)
+{ this(value);
+
+this.time=time;
+System.out.pritln("staring value is " +value);
+System.out.pritln("int value is " +int);
+}
+
+Chain ( String value,int time,float prince  )
+{
+this(value,time );
+this.prince=prince;
+System.out.pritln("staring value is " +value);
+System.out.pritln("time value is " +time);
+System.out.pritln("prince value is " +prince);
+}
+
+Chain ( String value,int time,float prince ,double var )
+{
+this(value,value, time );
+this.var=var;
+System.out.pritln("var value is " +var);
+System.out.pritln("staring value is " +value);
+System.out.pritln("time value is " +time);
+System.out.pritln("prince value is " +prince);
+}
+}
+}
+
+
+// another class constructor calling
+class Runner{
+public static void main(String[] args){
+
+Chain chain=new Chain("exam",2,150.0f,145.55d);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
